@@ -1,0 +1,244 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: #111;
+  transition: all 0.4s linear;
+  letter-spacing: 1.8px;
+  font-size: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.4s linear;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 2px;
+  transition: all 0.4s linear;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+main {
+  min-height: 100vh;
+  margin: 0;
+}
+main.home {
+  background-image: url(./bcg.jpg);
+  background-size: cover;
+  background-repeat: space;
+  background-attachment: fixed;
+}
+.home a {
+  display: block;
+  font-size: 150%;
+  font-weight: 700;
+  margin: 4rem auto;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0.3rem;
+  text-decoration: none;
+  width: max-content;
+}
+.home a:hover {
+  color: darkblue;
+}
+/* container */
+.container {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 1170px;
+}
+.container.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* header */
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+header h1 {
+  color: darkblue;
+  font-size: 250%;
+  padding: 0.7rem;
+  margin: 0%;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: darkblue;
+  padding: 0.2rem;
+}
+footer p {
+  padding: 0.2em;
+  margin: 0 1rem;
+  color: #f1f1f1;
+}
+footer a {
+  color: #f1f1f1;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* nav */
+.nav {
+  background-color: darkblue;
+}
+.nav ul {
+  list-style: none;
+  padding: 0%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 900px;
+  background-color: transparent;
+}
+
+.nav li {
+  flex: 1 0 auto;
+  font-size: 115%;
+  font-weight: 600;
+}
+
+.nav a {
+  display: block;
+  text-decoration: none;
+  padding: 0.6rem 0.8rem;
+  text-align: center;
+  color: #f1f1f1;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+.nav a:hover {
+  background-color: rgb(2, 2, 68);
+}
+
+/* receipe */
+.receipe {
+  flex: 1 1 400px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.receipe h2 {
+  color: darkblue;
+  background-color: transparent;
+  text-decoration: underline;
+  padding: 1rem;
+}
+
+.receipe h2:hover {
+  color: rgb(1, 1, 56);
+}
+.receipe img {
+  margin: 0 auto;
+}
+
+a.btn {
+  display: block;
+  padding: 0.2rem 0.5rem;
+  width: max-content;
+  margin: 0.5rem auto;
+  border: 1px solid orangered;
+  border-radius: 5px;
+  color: #222;
+  background-color: transparent;
+  font-size: 120%;
+  font-weight: 600;
+}
+
+a.btn:hover {
+  background-color: orangered;
+  color: #f1f1f1;
+}
+
+p {
+  line-height: 1.8;
+}
+
+img {
+  display: block;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+/* about  */
+.container.about {
+  margin: 3rem auto;
+}
+.container.about h2,
+section h2 {
+  color: darkblue;
+  padding: 1rem;
+}
+
+/* section */
+section {
+  margin: 2rem auto 0;
+  max-width: 80%;
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1170px) {
+  section {
+    max-width: 100%;
+  }
+}
+
+section span {
+  color: darkblue;
+}
+
+section h2 {
+  margin-bottom: 0%;
+}
+section h4 {
+  text-align: left;
+  width: 100%;
+}
+section.ingredient ul {
+  width: 100%;
+  text-align: left;
+  line-height: 2.6;
+  font-size: 120%;
+}
+section.directions h4 {
+  color: rgb(1, 42, 1);
+  width: max-content;
+  margin-bottom: 0%;
+  background-color: rgb(122, 250, 122);
+  align-self: flex-start;
+}
+
+p.step {
+  text-align: justify;
+}
